@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:spotifyui/core/model/song_model.dart';
 import 'package:spotifyui/ui/widget/song_widget.dart';
 
-class AlbumScreen extends StatelessWidget {
+class AlbumView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<SongWidget> songItems = generateSongList();
@@ -95,7 +95,7 @@ class AlbumScreen extends StatelessWidget {
   }
 
   Padding buildCoverImage() {
-    String url = "assets/images/mozart_cover.jpeg";
+    String url = "assets/mozart.jpg";
     return Padding(
       padding: EdgeInsets.all(8.0),
       child: Image(
